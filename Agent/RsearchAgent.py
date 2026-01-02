@@ -4,11 +4,67 @@ from dataclasses import dataclass, asdict
 from typing import List, Dict, Any, Optional
 import requests
 from tqdm import tqdm
+import random
+
 
 SEMANTIC_SCHOLAR_SEARCH = "https://api.semanticscholar.org/graph/v1/paper/search"
 FIELDS = "title,authors,year,abstract,url,citationCount,venue"
 
 MEMORY_PATH = "../memory.json"
+
+SEMANTIC_SCHOLAR_API_KEY = None  # "KEY"
+
+
+
+def get_with_backoff(url: str, *, params=None, headers=None, timeout=30, max_retries=8):
+    """
+    Robust GET with exponential backoff + Retry-After support.
+    Handles 429 (rate limit) and transient 5xx errors without crashing.
+    """
+    session = requests.Session()
+
+    base_headers = {
+        "User-Agent": "LitReviewAgent/1.0 (contact: github repo)",  # helps some APIs
+        "Accept": "application/json",
+    }
+    if headers:
+        base_headers.update(headers)
+
+    for attempt in range(1, max_retries + 1):
+        resp = session.get(url, params=params, headers=base_headers, timeout=timeout)
+
+        # Success
+        if resp.status_code == 200:
+            return resp
+
+        # Rate limited
+        if resp.status_code == 429:
+            retry_after = resp.headers.get("Retry-After")
+            if retry_after and retry_after.isdigit():
+                wait_s = int(retry_after)
+            else:
+                # Exponential backoff with jitter (prevents thundering herd)
+                wait_s = min(60, (2 ** (attempt - 1))) + random.uniform(0, 1.5)
+
+            print(f"[Rate limit] 429 from Semantic Scholar. Waiting {wait_s:.1f}s (attempt {attempt}/{max_retries})...")
+            time.sleep(wait_s)
+            continue
+
+        # Transient server errors
+        if resp.status_code in (500, 502, 503, 504):
+            wait_s = min(30, (2 ** (attempt - 1))) + random.uniform(0, 1.0)
+            print(f"[Server error] {resp.status_code}. Retrying in {wait_s:.1f}s (attempt {attempt}/{max_retries})...")
+            time.sleep(wait_s)
+            continue
+
+        # Other errors: raise immediately with useful details
+        try:
+            details = resp.json()
+        except Exception:
+            details = resp.text[:500]
+        raise requests.HTTPError(f"HTTP {resp.status_code}: {details}", response=resp)
+
+    raise requests.HTTPError("Exceeded max retries due to repeated rate limiting / server errors.")
 
 
 @dataclass
@@ -39,19 +95,22 @@ def save_memory(memory: List[PaperNote], path: str = MEMORY_PATH) -> None:
         json.dump([asdict(x) for x in memory], f, ensure_ascii=False, indent=2)
 
 
-def semantic_scholar_search(query: str, limit: int = 10, year_from: Optional[int] = None) -> List[Dict[str, Any]]:
+def semantic_scholar_search(query: str, limit: int = 10, year_from: int | None = None):
     params = {
         "query": query,
         "limit": limit,
-        "fields": FIELDS
+        "fields": "title,authors,year,abstract,url,citationCount,venue"
     }
     if year_from is not None:
-        # Semantic Scholar supports year filters via 'year' like "2021-2026"
         params["year"] = f"{year_from}-"
 
-    r = requests.get(SEMANTIC_SCHOLAR_SEARCH, params=params, timeout=30)
-    r.raise_for_status()
-    return r.json().get("data", [])
+    headers = {}
+    if SEMANTIC_SCHOLAR_API_KEY:
+        headers["x-api-key"] = SEMANTIC_SCHOLAR_API_KEY
+
+    resp = get_with_backoff(SEMANTIC_SCHOLAR_SEARCH, params=params, headers=headers)
+    return resp.json().get("data", [])
+
 
 
 def score_paper(p: Dict[str, Any]) -> float:
@@ -162,8 +221,16 @@ def synthesize_answer(memory: List[PaperNote], user_question: str, top_n: int = 
 def run_agent(user_question: str, search_limit: int = 12, year_from: Optional[int] = 2021) -> None:
     memory = load_memory()
 
-    print("Searching papers…")
-    papers = semantic_scholar_search(user_question, limit=search_limit, year_from=year_from)
+    try:
+        print("Searching papers…")
+        papers = semantic_scholar_search(user_question, limit=search_limit, year_from=year_from)
+    except requests.HTTPError as e:
+        print(f"Could not fetch papers right now. Reason: {e}")
+        print("Tip: try again in 1–2 minutes, or add an API key for higher limits.")
+        return
+
+    # print("Searching papers…")
+    # papers = semantic_scholar_search(user_question, limit=search_limit, year_from=year_from)
 
     if not papers:
         print("No results found.")
