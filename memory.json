@@ -1,0 +1,293 @@
+[
+  {
+    "paperId": "53c9f3c34d8481adaf24df3b25581ccf1bc53f5c",
+    "title": "Physics-informed machine learning",
+    "year": 2021,
+    "url": "https://www.semanticscholar.org/paper/53c9f3c34d8481adaf24df3b25581ccf1bc53f5c",
+    "citationCount": 5091,
+    "venue": "Nature Reviews Physics",
+    "authors": [
+      "G. Karniadakis",
+      "I. Kevrekidis",
+      "Lu Lu",
+      "P. Perdikaris",
+      "Sifan Wang",
+      "Liu Yang"
+    ],
+    "abstract": null,
+    "tags": [
+      "physics"
+    ],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "7872f34e2a164c5cf3c34a7a7433dc3342b6c7ea",
+    "title": "Machine Learning: Algorithms, Real-World Applications and Research Directions",
+    "year": 2021,
+    "url": "https://www.semanticscholar.org/paper/7872f34e2a164c5cf3c34a7a7433dc3342b6c7ea",
+    "citationCount": 3821,
+    "venue": "SN Computer Science",
+    "authors": [
+      "Iqbal H. Sarker"
+    ],
+    "abstract": "In the current age of the Fourth Industrial Revolution (4IR or Industry 4.0), the digital world has a wealth of data, such as Internet of Things (IoT) data, cybersecurity data, mobile data, business data, social media data, health data, etc. To intelligently analyze these data and develop the corresponding smart and automated applications, the knowledge of artificial intelligence (AI), particularly, machine learning (ML) is the key. Various types of machine learning algorithms such as supervised, unsupervised, semi-supervised, and reinforcement learning exist in the area. Besides, the deep learning, which is part of a broader family of machine learning methods, can intelligently analyze the data on a large scale. In this paper, we present a comprehensive view on these machine learning algorithms that can be applied to enhance the intelligence and the capabilities of an application. Thus, this study’s key contribution is explaining the principles of different machine learning techniques and their applicability in various real-world application domains, such as cybersecurity systems, smart cities, healthcare, e-commerce, agriculture, and many more. We also highlight the challenges and potential research directions based on our study. Overall, this paper aims to serve as a reference point for both academia and industry professionals as well as for decision-makers in various real-world situations and application areas, particularly from the technical point of view.",
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "In the current age of the Fourth Industrial Revolution (4IR or Industry 4.0), the digital world has a wealth of data, such as Internet of Things (IoT) data, cybersecurity data, mobile data, business data, social media data, health data, etc. To intelligently analyze these data and develop the corresponding smart and automated applications, the knowledge of artificial intelligence (AI), particularl...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "9f5b82d9915d0752957602224c5056be7e749c83",
+    "title": "Foundations of Machine Learning",
+    "year": 2021,
+    "url": "https://www.semanticscholar.org/paper/9f5b82d9915d0752957602224c5056be7e749c83",
+    "citationCount": 3400,
+    "venue": "Introduction to AI Techniques for Renewable Energy Systems",
+    "authors": [
+      "N. Nathani",
+      "Abhishek Singh"
+    ],
+    "abstract": null,
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "56e8863838b4dcc4790108cd1e7e680a104a7c30",
+    "title": "Machine Learning Algorithms: A Review",
+    "year": 2022,
+    "url": "https://www.semanticscholar.org/paper/56e8863838b4dcc4790108cd1e7e680a104a7c30",
+    "citationCount": 1910,
+    "venue": "International Journal of Science and Research (IJSR)",
+    "authors": [
+      "Ayon Dey"
+    ],
+    "abstract": ".",
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": ".",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "6b0570e66cdf79704461e1f8a07dc761ac10d6b6",
+    "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/6b0570e66cdf79704461e1f8a07dc761ac10d6b6",
+    "citationCount": 1119,
+    "venue": "British medical journal",
+    "authors": [
+      "Gary S. Collins",
+      "K. Moons",
+      "P. Dhiman",
+      "R. Riley",
+      "A. L. Beam",
+      "Ben Van Calster",
+      "Marzyeh Ghassemi",
+      "Xiaoxuan Liu",
+      "Johannes B Reitsma",
+      "M. van Smeden",
+      "A. Boulesteix",
+      "J. Camaradou",
+      "L. Celi",
+      "S. Denaxas",
+      "A. Denniston",
+      "Ben Glocker",
+      "Robert M Golub",
+      "Hugh Harvey",
+      "G. Heinze",
+      "Michael M. Hoffman",
+      "A. Kengne",
+      "Emily Lam",
+      "Naomi Lee",
+      "Elizabeth W Loder",
+      "Lena Maier-Hein",
+      "B. Mateen",
+      "Melissa Mccradden",
+      "Lauren Oakden-Rayner",
+      "Johan Ordish",
+      "Richard Parnell",
+      "S. Rose",
+      "Karandeep Singh",
+      "L. Wynants",
+      "P. Logullo"
+    ],
+    "abstract": "The TRIPOD (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis) statement was published in 2015 to provide the minimum reporting recommendations for studies developing or evaluating the performance of a prediction model. Methodological advances in the field of prediction have since included the widespread use of artificial intelligence (AI) powered by machine learning methods to develop prediction models. An update to the TRIPOD statement is thus needed. TRIPOD+AI provides harmonised guidance for reporting prediction model studies, irrespective of whether regression modelling or machine learning methods have been used. The new checklist supersedes the TRIPOD 2015 checklist, which should no longer be used. This article describes the development of TRIPOD+AI and presents the expanded 27 item checklist with more detailed explanation of each reporting recommendation, and the TRIPOD+AI for Abstracts checklist. TRIPOD+AI aims to promote the complete, accurate, and transparent reporting of studies that develop a prediction model or evaluate its performance. Complete reporting will facilitate study appraisal, model evaluation, and model implementation.",
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "The TRIPOD (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis) statement was published in 2015 to provide the minimum reporting recommendations for studies developing or evaluating the performance of a prediction model. Methodological advances in the field of prediction have since included the widespread use of artificial intelligence (AI) powered by m...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "0d2c38b39f73003ec23ee3e2382e319e20bd5d18",
+    "title": "Using Machine Learning to Identify Diseases and Perform Sorting in Apple Fruit",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/0d2c38b39f73003ec23ee3e2382e319e20bd5d18",
+    "citationCount": 926,
+    "venue": "International Journal of Innovative Science and Research Technology",
+    "authors": [
+      "Arpit Patidar",
+      "Abir Chakravorty"
+    ],
+    "abstract": "Fruit diseases play a major role in global agriculture, leading to substantial crop losses and influencing food production and economic stability. In this age of Industry 4.0 the fruit sorting is an important part in the food processing wherein this work plays a vital role. In this study, a solution for the detection and classification of apple fruit diseases is proposed and experimentally validated. Deep learning models offer promise for automating disease identification using fruit images, but encounter obstacles such as therequirement for extensive training data, computational complexity, and the risk of overfitting. This study introduces an innovative convolutional neural network (CNN) architecture aimed at addressing these challenges by incorporating a reduced number of layers, thus alleviating computational burdens while maintaining performance. Additionally, augmentation techniques such as shift, shear, scaling, zoom, and flipping are employed to diversify the training set without additional image acquisition. Our CNN model is specifically trained to identify common apple crop diseases like Scab, Rot, and Blotch. Rigorous experimental evaluation demonstrates the effectiveness ofour model, achieving a remarkable classification accuracy of 95.37%. Significantly, our model demonstrates reduced storage requirements and faster execution times compared to existing deep CNN architectures, enabling deployment on handheld devices and resource-limited environments. While other CNN models may offer similar accuracy levels, our approach emphasizes efficiency and resource optimization, rendering it practical for real-world applications in agriculture. Furthermore, our CNN model exhibits resilience to environmental variations and imaging parameters, enhancing its applicability across diverse agricultural settings. By leveraging advanced machine learning techniques, the approach developed in this experimental work contributes to modernizing fruits and vegetables sorting operations in food processing, crop management practices thus promoting agricultural sustainability. The scalability and portability of our model make it suitable for deployment in both small-scale farms and large-scale agricultural operations.",
+    "tags": [
+      "neural"
+    ],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "Fruit diseases play a major role in global agriculture, leading to substantial crop losses and influencing food production and economic stability. In this age of Industry 4.0 the fruit sorting is an important part in the food processing wherein this work plays a vital role. In this study, a solution for the detection and classification of apple fruit diseases is proposed and experimentally validat...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "a509670659e8b054e2b7d1b6f8a0bc722398fa62",
+    "title": "PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/a509670659e8b054e2b7d1b6f8a0bc722398fa62",
+    "citationCount": 820,
+    "venue": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+    "authors": [
+      "Jason Ansel",
+      "Edward Yang",
+      "Horace He",
+      "N. Gimelshein",
+      "Animesh Jain",
+      "Michael Voznesensky",
+      "Bin Bao",
+      "Peter Bell",
+      "David Berard",
+      "Evgeni Burovski",
+      "Geeta Chauhan",
+      "Anjali Chourdia",
+      "Will Constable",
+      "Alban Desmaison",
+      "Zachary DeVito",
+      "Elias Ellison",
+      "Will Feng",
+      "Jiong Gong",
+      "Michael Gschwind",
+      "Brian Hirsh",
+      "Sherlock Huang",
+      "Kshiteej Kalambarkar",
+      "Laurent Kirsch",
+      "Michael Lazos",
+      "Mario Lezcano",
+      "Yanbo Liang",
+      "Jason Liang",
+      "Yinghai Lu",
+      "C. K. Luk",
+      "Bert Maher",
+      "Yunjie Pan",
+      "Christian Puhrsch",
+      "Matthias Reso",
+      "Mark-Albert Saroufim",
+      "Marcos Yukio Siraichi",
+      "Helen Suk",
+      "Shunting Zhang",
+      "Michael Suo",
+      "P. Tillet",
+      "Xu Zhao",
+      "Eikan Wang",
+      "Keren Zhou",
+      "Richard Zou",
+      "Xiaodong Wang",
+      "Ajit Mathews",
+      "William Wen",
+      "Gregory Chanan",
+      "Peng Wu",
+      "Soumith Chintala"
+    ],
+    "abstract": "This paper introduces two extensions to the popular PyTorch machine learning framework, TorchDynamo and TorchInductor, which implement the torch.compile feature released in PyTorch 2. TorchDynamo is a Python-level just-in-time (JIT) compiler that enables graph compilation in PyTorch programs without sacrificing the flexibility of Python. It achieves this by dynamically modifying Python bytecode before execution and extracting sequences of PyTorch operations into an FX graph, which is then JIT compiled using one of many extensible backends. TorchInductor is the default compiler backend for TorchDynamo, which translates PyTorch programs into OpenAI's Triton for GPUs and C++ for CPUs. Results show that TorchDynamo is able to capture graphs more robustly than prior approaches while adding minimal overhead, and TorchInductor is able to provide a 2.27× inference and 1.41× training geometric mean speedup on an NVIDIA A100 GPU across 180+ real-world models, which outperforms six other compilers. These extensions provide a new way to apply optimizations through compilers in eager mode frameworks like PyTorch.",
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "This paper introduces two extensions to the popular PyTorch machine learning framework, TorchDynamo and TorchInductor, which implement the torch.compile feature released in PyTorch 2. TorchDynamo is a Python-level just-in-time (JIT) compiler that enables graph compilation in PyTorch programs without sacrificing the flexibility of Python. It achieves this by dynamically modifying Python bytecode be...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "4a2b5058000d567036fc9aaad75bbf71cce53002",
+    "title": "Evaluation metrics and statistical tests for machine learning",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/4a2b5058000d567036fc9aaad75bbf71cce53002",
+    "citationCount": 726,
+    "venue": "Scientific Reports",
+    "authors": [
+      "O. Rainio",
+      "J. Teuho",
+      "R. Klén"
+    ],
+    "abstract": "Research on different machine learning (ML) has become incredibly popular during the past few decades. However, for some researchers not familiar with statistics, it might be difficult to understand how to evaluate the performance of ML models and compare them with each other. Here, we introduce the most common evaluation metrics used for the typical supervised ML tasks including binary, multi-class, and multi-label classification, regression, image segmentation, object detection, and information retrieval. We explain how to choose a suitable statistical test for comparing models, how to obtain enough values of the metric for testing, and how to perform the test and interpret its results. We also present a few practical examples about comparing convolutional neural networks used to classify X-rays with different lung infections and detect cancer tumors in positron emission tomography images.",
+    "tags": [
+      "neural"
+    ],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "Research on different machine learning (ML) has become incredibly popular during the past few decades. However, for some researchers not familiar with statistics, it might be difficult to understand how to evaluate the performance of ML models and compare them with each other. Here, we introduce the most common evaluation metrics used for the typical supervised ML tasks including binary, multi-cla...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "b3954728823a82d6bc45ce2921ccb71c10406480",
+    "title": "Book review: Christoph Molnar. 2020. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/b3954728823a82d6bc45ce2921ccb71c10406480",
+    "citationCount": 625,
+    "venue": "Metamorphosis: A Journal of Management Research",
+    "authors": [
+      "R. K. Sinha"
+    ],
+    "abstract": "Christoph Molnar. 2020. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable, Lulu.com, pp. 318, ₹6690.",
+    "tags": [],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "Christoph Molnar. 2020. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable, Lulu.com, pp. 318, ₹6690.",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  },
+  {
+    "paperId": "92930255746c0eaf44a6ee55af21533986ecd92f",
+    "title": "Heart Disease Prediction Using Machine Learning Algorithms",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/92930255746c0eaf44a6ee55af21533986ecd92f",
+    "citationCount": 489,
+    "venue": "International Conference on Smart Communications and Networking",
+    "authors": [
+      "Dina Jrab",
+      "Derar Eleyan",
+      "Amna Eleyan",
+      "Tarek Bejaoui"
+    ],
+    "abstract": "Heart disease is a prevalent and complex condition that affects numerous individuals worldwide. Timely and accurate diagnosis of heart disease is of utmost importance in cardiology. In this research article, we propose an efficient and precise system for heart disease diagnosis, employing machine learning techniques. The system is designed based on various classification algorithms, including Support Vector Machine, Logistic Regression, Decision Tree, and Random Forest. Standard feature selection algorithms such as ANDV A, Chi-Squared, and Mutual Information Feature Selection (MIFS) are utilized to eliminate unrelated features. Furthermore, we introduce a novel fast experiment that contains a conditional mutual information feature selection algorithm, ANDVA feature selection algorithms, and a Chi-squared feature selection algorithm to address the feature selection challenge. These feature selection algorithms enhance classification model accuracy and reduce the compile time in the classification ML model. The cross-validation method evaluates the models and optimizes hyperparameters, ensuring reliable model assessment. Performance measuring metrics are utilized to assess the classifiers' performance. The classifiers are estimated based on the selected features determined by the feature selection algorithms. The experimental results show that the ANDV A F -test feature selection algorithm along with the Support Vector Machine classifier, is a viable approach for developing an advanced intelligent system that can identify heart disease. The proposed model can also be easily implemented in healthcare to facilitate heart disease identification.",
+    "tags": [
+      "random forest"
+    ],
+    "notes": {
+      "relevance_to_question": "Candidate paper for: machine learning",
+      "key_idea_guess": "Heart disease is a prevalent and complex condition that affects numerous individuals worldwide. Timely and accurate diagnosis of heart disease is of utmost importance in cardiology. In this research article, we propose an efficient and precise system for heart disease diagnosis, employing machine learning techniques. The system is designed based on various classification algorithms, including Supp...",
+      "why_it_matters_guess": "Read the full paper for details; abstract suggests relevance.",
+      "limitations_guess": "Unknown from abstract alone."
+    }
+  }
+]
